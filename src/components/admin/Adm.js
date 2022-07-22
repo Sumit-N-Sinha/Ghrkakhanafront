@@ -1,13 +1,17 @@
 import Login from "../Login";
+import Navbar from "../navbar/Navbar";
 
 function Adm(){
     return(
         <>
+            <div className="backk">
+            <Navbar />
+            </div>
             <Login
             imgsrc=""
             title="Admin Login"
             role="" 
-            link=""
+            link="Adminlog"
             name=""
             />
             <Login

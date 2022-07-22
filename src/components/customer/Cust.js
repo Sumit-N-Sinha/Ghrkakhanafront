@@ -1,9 +1,13 @@
 import Login from "../Login";
+import Navbar from "../navbar/Navbar";
 import './cust.css';
 
 function Cust(){
     return(
         <>
+        <div className="backk">
+        <Navbar />
+        </div>
             <Login
             imgsrc="https://img.freepik.com/premium-vector/register-now-isolated-icon-banner-trendy-style-yellow-speech-bubble-arrow-abstract-elements-registration-button-ui-design-element-web-site-subscribe-membership-vector-illustration_87771-11526.jpg?w=2000"
             title="Register"

@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import React, {useState,setState} from 'react';
+import Navbar from '../navbar/Navbar';
 import './style.css'
 function Createcust() {
     
@@ -36,6 +37,8 @@ function Createcust() {
     }
 
     return(
+        <>
+        <div className='backk'><Navbar /></div>
         <div className="form">
             <div className="form-body">
                 <div className="username">
@@ -63,6 +66,7 @@ function Createcust() {
                 <button onClick={()=>handleSubmit()} type="submit" class="btn">Register</button>
             </div>
         </div>
+        </>
        
     )       
 }

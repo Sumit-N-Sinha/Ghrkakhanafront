@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Log from './components/Log';
-import Pathh from './components/pathh/Pathh';
+import App from './App';
 import './index.css';
+import './components/vendor/vendor.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <Pathh />
+  <App />
   </React.StrictMode>
 );
 
