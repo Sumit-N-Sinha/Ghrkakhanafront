@@ -6,6 +6,10 @@ import {
 } from "react-router-dom";
 import Adm from "../admin/Adm";
 import Adminlog from "../admin/Adminlog";
+import AdminControl from "../admin/AdminControl";
+import AdminCF from "../admin/AdminCF";
+import AdminCP from "../admin/AdminCP";
+import AdminCS from "../admin/AdminCS";
 import Createcust from "../customer/Createcust";
 import Cust from "../customer/Cust";
 import Custfood from "../customer/Custfood";
@@ -30,6 +34,10 @@ function Pathh(){
                 <Route path="/Admin" element={<Adm />} />
                 <Route path="/Vendor" element={<Vendor />} />
                 <Route path="/Adminlog" element={<Adminlog />} />
+                       <Route path="/AdminControl" element={<AdminControl/>}/>
+                <Route path="/AdminCF" element={<AdminCF/>}/>
+                <Route path="/AdminCP" element={<AdminCP/>}/>
+                <Route path="/AdminCS" element={<AdminCS/>}/>
                 <Route path="/Customer" element={<Customer />} />
                 <Route path="/Create" element={<Createcust />} />
                 <Route path="/Custorderd" element={<Custorderd />} />
