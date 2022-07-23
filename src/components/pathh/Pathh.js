@@ -34,7 +34,7 @@ function Pathh(){
                 <Route path="/Admin" element={<Adm />} />
                 <Route path="/Vendor" element={<Vendor />} />
                 <Route path="/Adminlog" element={<Adminlog />} />
-                       <Route path="/AdminControl" element={<AdminControl/>}/>
+                <Route path="/AdminControl" element={<AdminControl/>}/>
                 <Route path="/AdminCF" element={<AdminCF/>}/>
                 <Route path="/AdminCP" element={<AdminCP/>}/>
                 <Route path="/AdminCS" element={<AdminCS/>}/>

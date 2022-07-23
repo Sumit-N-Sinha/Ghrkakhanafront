@@ -19,7 +19,7 @@ function Adm(){
             imgsrc="https://cdn4.vectorstock.com/i/1000x1000/89/13/user-login-icon-vector-21078913.jpg"
             title="Already a customer,Login"
             role="Login Admin"
-            link="Adminlog"
+            link="AdminControl"
             word="Login"
              />
             
