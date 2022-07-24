@@ -70,7 +70,7 @@ function Custfood(){
             <div class="box">
               <div class="right-side">
                 <div class="box-topic">Get All Food</div>
-                <a class="btn btn-danger" href="Notification" role="button">Tasty</a>
+                <a class="btn btn-danger" href="food" role="button">Tasty</a>
                 
               </div>
               <i class="bx bx-cart-alt cart"></i>
@@ -78,7 +78,7 @@ function Custfood(){
             <div class="box">
               <div class="right-side">
                 <div class="box-topic">Sort by price</div>
-                <a class="btn btn-danger" href="AttendanceS" role="button">ASC</a>
+                <a class="btn btn-danger" href="foodasc" role="button">ASC</a>
                 
               </div>
               <i class="bx bxs-cart-add cart two"></i>
@@ -86,7 +86,7 @@ function Custfood(){
             <div class="box">
               <div class="right-side">
                 <div class="box-topic">Sort by price</div>
-                <a class="btn btn-danger" href="Assessment" role="button">DESC</a>
+                <a class="btn btn-danger" href="fooddesc" role="button">DESC</a>
                 
               </div>
               <i class="bx bx-cart cart three"></i>

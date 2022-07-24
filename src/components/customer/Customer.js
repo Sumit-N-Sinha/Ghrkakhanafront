@@ -83,7 +83,7 @@ function Customer(){
           <div class="box">
             <div class="right-side">
               <div class="box-topic">Add Order</div>
-              <a class="btn btn-danger" href="Notification" role="button">Create</a>
+              <a class="btn btn-danger" href="add-food" role="button">Create</a>
               
             </div>
             <i class="bx bx-cart-alt cart"></i>
@@ -91,7 +91,7 @@ function Customer(){
           <div class="box">
             <div class="right-side">
               <div class="box-topic">Get All Food</div>
-              <a class="btn btn-danger" href="AttendanceS" role="button">Tasty</a>
+              <a class="btn btn-danger" href="food" role="button">Tasty</a>
               
             </div>
             <i class="bx bxs-cart-add cart two"></i>

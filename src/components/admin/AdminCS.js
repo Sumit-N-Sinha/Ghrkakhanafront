@@ -16,37 +16,37 @@ const AdminCS = () => {
         </div>
           <ul class="nav-links">
             <li>
-              <a href="/Customer">
+              <a href="/AdminControl">
                 <i class="bx bx-grid-alt"></i>
                 <span class="links_name">Dashboard</span>
               </a>
             </li>
             <li>
-              <a href="/Custprofile">
+              <a href="/AdminCP">
                 <i class="bx bx-box"></i>
                 <span class="links_name">Profile</span>
               </a>
             </li>
             <li>
-              <a href="/Custfood">
+              <a href="/AdminCF">
                 <i class="bx bx-pie-chart-alt-2"></i>
-                <span class="links_name">View All Food</span>
+                <span class="links_name">Customer</span>
               </a>
             </li>
             <li>
-              <a href="/Custorderd">
+              <a href="/AdminVendor">
                 <i class="bx bx-coin-stack"></i>
-                <span class="links_name">Order Details</span>
+                <span class="links_name">Vendor</span>
               </a>
             </li>
             <li>
-              <a href="/Custstatus" class="active">
+              <a href="/AdminCS" class="active">
                 <i class="bx bx-book-alt"></i>
                 <span class="links_name">Status</span>
               </a>
             </li>
             <li>
-              <a href="/Adm">
+              <a href="/">
                 <i class="bx bx-user"></i>
                 <span class="links_name">Log Out</span>
               </a>

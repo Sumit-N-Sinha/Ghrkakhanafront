@@ -23,6 +23,21 @@ import Vendordash from "../vendor/Vendordash";
 import Vendorfood from "../vendor/Vendorfood";
 import Vendorprofile from "../vendor/Vendorprofile";
 import Vendorstatus from "../vendor/Vendorstatus";
+import ListAllCustomerComponent from "../CustomerComponents/ListAllCustomerComponents";
+import CreateCustomerComponent from "../CustomerComponents/CreateCustomerCompnent";
+import CreateOrderComponent from "../OrderComponents/CreateOrderComponent";
+import ListAllOrderComponent from "../OrderComponents/ListAllOrderComponents";
+import ListAllFoodItemComponent from "../FoodItemComponents/ListAllFoodItemComponents";
+import CreateFoodItemComponent from "../FoodItemComponents/CreateFoodItemComponents";
+import CreateVendorComponent from "../VendorComponents/CreateVendorComponents";
+import ListAsc from "../CustomerComponents/ListAsc";
+import ListDesc from "../CustomerComponents/ListDesc";
+import AdminVendor from "../admin/AdminVendor";
+import DeleteCustomerComponent from "../CustomerComponents/DeleteCustomerComponents";
+import About from "../navbar/About";
+
+
+
 
 function Pathh(){
     return(
@@ -39,7 +54,7 @@ function Pathh(){
                 <Route path="/AdminCP" element={<AdminCP/>}/>
                 <Route path="/AdminCS" element={<AdminCS/>}/>
                 <Route path="/Customer" element={<Customer />} />
-                <Route path="/Create" element={<Createcust />} />
+                <Route path="/Create" element={<CreateCustomerComponent />} />
                 <Route path="/Custorderd" element={<Custorderd />} />
                 <Route path="/Custstatus" element={<Custstatus />} />
                 <Route path="/Custfood" element={<Custfood />} />
@@ -48,6 +63,18 @@ function Pathh(){
                 <Route path="/Vendordash" element={<Vendordash />} />
                 <Route path="/Vendorstatus" element={<Vendorstatus />} />
                 <Route path="/Vendorprofile" element={<Vendorprofile />} />
+                <Route path="/AdminVendor" element={<AdminVendor />} />
+                <Route path="/DeleteCust" element={<DeleteCustomerComponent />} />
+                <Route path="/all" element={<ListAllCustomerComponent />} />
+                <Route path="/order" element={<CreateOrderComponent />} />
+                <Route path="/allorders" element={<ListAllOrderComponent />} />
+                <Route path="/food" element={<ListAllFoodItemComponent />} />
+                <Route path="/add-food" element={<CreateFoodItemComponent />} />
+                <Route path="/add-vendor" element={<CreateVendorComponent />} />
+                <Route path="/foodasc" element={<ListAsc />} />
+                <Route path="/fooddesc" element={<ListDesc />} />
+                <Route path="/about" element={<About />} />
+
             </Routes>
         </Router>
     );

@@ -15,37 +15,37 @@ const AdminControl = () => {
 </div>
   <ul class="nav-links">
     <li>
-      <a href="/Customer" class="active">
+      <a href="/AdminControl" class="active">
         <i class="bx bx-grid-alt"></i>
         <span class="links_name">Dashboard</span>
       </a>
     </li>
     <li>
-      <a href="/Custprofile">
+      <a href="/AdminCP">
         <i class="bx bx-box"></i>
         <span class="links_name">Profile</span>
       </a>
     </li>
     <li>
-      <a href="/Custfood">
+      <a href="/AdminCF">
         <i class="bx bx-pie-chart-alt-2"></i>
-        <span class="links_name">View All Food</span>
+        <span class="links_name">Customer</span>
       </a>
     </li>
     <li>
-      <a href="/Custorderd">
+      <a href="/AdminVendor">
         <i class="bx bx-coin-stack"></i>
-        <span class="links_name">Order Details</span>
+        <span class="links_name">Vendor</span>
       </a>
     </li>
     <li>
-      <a href="/Custstatus">
+      <a href="/AdminCS">
         <i class="bx bx-book-alt"></i>
         <span class="links_name">Status</span>
       </a>
     </li>
     <li>
-      <a href="/Adm">
+      <a href="/">
         <i class="bx bx-user"></i>
         <span class="links_name">Log Out</span>
       </a>
@@ -69,24 +69,24 @@ const AdminControl = () => {
   <div class="overview-boxes">
     <div class="box">
       <div class="right-side">
-        <div class="box-topic">Add Order</div>
-        <a class="btn btn-danger" href="Notification" role="button">Create</a>
+        <div class="box-topic">Get All Customers</div>
+        <a class="btn btn-danger" href="/all" role="button">Find</a>
         
       </div>
       <i class="bx bx-cart-alt cart"></i>
     </div>
     <div class="box">
       <div class="right-side">
-        <div class="box-topic">Get All Food</div>
-        <a class="btn btn-danger" href="AttendanceS" role="button">Tasty</a>
+        <div class="box-topic">Get All Vendor</div>
+        <a class="btn btn-danger" href="/listvendor" role="button">Find</a>
         
       </div>
       <i class="bx bxs-cart-add cart two"></i>
     </div>
     <div class="box">
       <div class="right-side">
-        <div class="box-topic">Order Status</div>
-        <a class="btn btn-danger" href="Assessment" role="button">Get Status</a>
+        <div class="box-topic">Delete Order</div>
+        <a class="btn btn-danger" href="/deleteorder" role="button">Delete</a>
         
       </div>
       <i class="bx bx-cart cart three"></i>

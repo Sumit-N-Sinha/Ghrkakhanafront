@@ -14,3 +14,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.liststyle{
+  background-color: aliceblue;
+  font-size: medium;
+  font-style: italic;
+}

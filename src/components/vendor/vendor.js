@@ -12,7 +12,7 @@ function Vendor(){
             imgsrc="https://img.freepik.com/premium-vector/register-now-isolated-icon-banner-trendy-style-yellow-speech-bubble-arrow-abstract-elements-registration-button-ui-design-element-web-site-subscribe-membership-vector-illustration_87771-11526.jpg?w=2000"
             title="Register"
             role="Create Vendor"
-            link="Create"
+            link="add-vendor"
             word="Register"
              />
 

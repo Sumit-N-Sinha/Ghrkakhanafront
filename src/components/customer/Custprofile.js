@@ -70,7 +70,7 @@ function Custprofile(){
                 <div class="box">
                   <div class="right-side">
                     <div class="box-topic">Edit Profile</div>
-                    <a class="btn btn-danger" href="Notification" role="button">Edit</a>
+                    <a class="btn btn-danger" href="create" role="button">Edit</a>
                     
                   </div>
                   

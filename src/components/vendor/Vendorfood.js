@@ -64,7 +64,7 @@ function Vendorfood(){
             <div class="box">
               <div class="right-side">
                 <div class="box-topic">Add Food Items</div>
-                <a class="btn btn-danger" href="Notification" role="button">CREATE</a>
+                <a class="btn btn-danger" href="add-food" role="button">CREATE</a>
                 
               </div>
               <i class="bx bx-cart-alt cart"></i>
@@ -72,7 +72,7 @@ function Vendorfood(){
             <div class="box">
               <div class="right-side">
                 <div class="box-topic">View Food Items</div>
-                <a class="btn btn-danger" href="AttendanceS" role="button">View</a>
+                <a class="btn btn-danger" href="food" role="button">View</a>
                 
               </div>
               <i class="bx bxs-cart-add cart two"></i>

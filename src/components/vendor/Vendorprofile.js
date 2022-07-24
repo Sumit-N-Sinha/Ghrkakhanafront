@@ -64,7 +64,7 @@ function Vendorprofile(){
             <div class="box">
               <div class="right-side">
                 <div class="box-topic">Edit details</div>
-                <a class="btn btn-danger" href="Notification" role="button">Edit</a>
+                <a class="btn btn-danger" href="add-vendor" role="button">Edit</a>
                 
               </div>
               <i class="bx bx-cart-alt cart"></i>
@@ -72,12 +72,12 @@ function Vendorprofile(){
             <div class="box">
               <div class="right-side">
                 <div class="box-topic">Edit Food Items</div>
-                <a class="btn btn-danger" href="AttendanceS" role="button">Edit</a>
+                <a class="btn btn-danger" href="Add-food" role="button">Edit</a>
                 
               </div>
               <i class="bx bxs-cart-add cart two"></i>
             </div>
-            
+            <i class ="bx bxs-cart-add cart three"></i>
             
           </div>
         </div>
