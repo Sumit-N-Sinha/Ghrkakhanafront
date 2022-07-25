@@ -2,11 +2,13 @@ import React, {useState, useEffect} from 'react'
 import {Link, useNavigate, useParams } from 'react-router-dom';
 import CustomerService from '../../service/CustomerService'
 import OrderService from '../../service/OrderService';
+import Navbar from '../navbar/Navbar';
 const CreateOrderComponent = () => {
 
     const [totalprice, setTotalprice] = useState('')
     const [date, setDate] = useState('')
     const [cid, setCid] = useState('')
+    const [fid, setFid] = useState('')
 
 
     const navigate = useNavigate();
@@ -15,11 +17,11 @@ const CreateOrderComponent = () => {
     const saveOrUpdateCustomer = (e) => {
         e.preventDefault();
 
-        const order = {totalprice, date, cid}
+        const order = { date, cid, totalprice, fid}
 
         if(id){
             OrderService.updateOrder(id, order).then((response) => {
-                navigate.push('/order')
+                navigate('/order')
             }).catch(error => {
                 console.log(error)
             })
@@ -29,7 +31,7 @@ const CreateOrderComponent = () => {
 
                 console.log(response.data)
     
-                navigate.push('/order');
+                navigate('/order');
     
             }).catch(error => {
                 console.log(error)
@@ -44,7 +46,7 @@ const CreateOrderComponent = () => {
             setTotalprice(response.data.totalprice)
             setDate(response.data.date)
             setCid(response.data.cid)
-
+            setFid(response.data.fid)
 
         }).catch(error => {
             console.log(error)
@@ -61,7 +63,10 @@ const CreateOrderComponent = () => {
     }
 
     return (
-        <div>
+        <>
+        <div className='backk'>
+            <Navbar />
+        </div>
            <br /><br />
            <div className = "container">
                 <div className = "row">
@@ -73,16 +78,17 @@ const CreateOrderComponent = () => {
                             <form>
                                 
                                 <div className = "form-group mb-2">
-                                    <label className = "form-label"> Total Price :</label>
+                                    <label className = "form-label"> Token Number :</label>
                                     <input
                                         type = "number"
-                                        placeholder = "Enter total price"
+                                        placeholder = "Enter token number"
                                         name = "totalprice"
                                         className = "form-control"
                                         value = {totalprice}
                                         onChange = {(e) => setTotalprice(e.target.value)}
-                                    >
-                                    </input>
+                                        required
+                                    />
+                                    
                                 </div>
 
                                 <div className = "form-group mb-2">
@@ -110,17 +116,31 @@ const CreateOrderComponent = () => {
                                     >
                                     </input>
                                 </div>
+
+                                <div className = "form-group mb-2">
+                                    <label className = "form-label"> Food Id :</label>
+                                    <input
+                                        type = "number"
+                                        placeholder = "Enter food id"
+                                        name = "fid"
+                                        className = "form-control"
+                                        value = {fid}
+                                        onChange = {(e) => setFid(e.target.value)}
+                                    >
+                                    </input>
+                                </div>
+                                
                                 <button className = "btn btn-success" onClick = {(e) => saveOrUpdateCustomer(e)} >Submit </button>
                                 <Link to="/customer" className="btn btn-danger"> Cancel </Link>
                             </form>
-
+                        
                         </div>
                     </div>
                 </div>
 
            </div>
 
-        </div>
+        </>
     )
 }
 

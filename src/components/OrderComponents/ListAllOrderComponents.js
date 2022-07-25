@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import OrderService from '../../service/OrderService'
+import Navbar from '../navbar/Navbar'
 
 const ListAllOrderComponent = () => {
 
@@ -31,7 +32,13 @@ const ListAllOrderComponent = () => {
     }
 
     return (
+        <>
+        <div className='backk'>
+            <Navbar />
+        </div>
+        
         <div className = "container">
+        <div className ="liststyle">
             <h2 className = "text-center"> List Orders </h2>
             {/* <Link to = "/add-customer" className = "btn btn-primary mb-2" > Add Customer </Link> */}
             <table className="table table-bordered table-striped">
@@ -61,6 +68,8 @@ const ListAllOrderComponent = () => {
                 </tbody>
             </table>
         </div>
+        </div>
+        </>
     )
 }
 

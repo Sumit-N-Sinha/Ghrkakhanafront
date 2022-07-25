@@ -58,7 +58,7 @@ const ListAsc = () => {
                                 <td> {food.name} </td>
                                 <td>{food.price}</td>
                                 <td>{food.quantity}</td>
-                                <td>{food.image}</td>
+                                <td>{<img src={food.image} width="100" height="75" />}</td>
 
                                 <td>
                                     <Link className="btn btn-info" to={`/edit-food/${food.id}`} >Update</Link>

@@ -8,11 +8,11 @@ class FoodItemService{
     }
 
     getAllFoodAsc(){
-        return axios.get("http://localhost:9292/vendor/all")
+        return axios.get("http://localhost:9292/customer/price/asc")
     }
 
     getAllFoodDesc(){
-        return axios.get("http://localhost:9292/vendor/all")
+        return axios.get("http://localhost:9292/customer/price/desc")
     }
 
     createFoodItem(food){

@@ -18,7 +18,7 @@ function Vendor(){
 
             <Login
             imgsrc="https://cdn4.vectorstock.com/i/1000x1000/89/13/user-login-icon-vector-21078913.jpg"
-            title="Already a customer,Login"
+            title="Already a vendor,Login"
             role="Login Vendor"
             link="Vendordash"
             word="Login"

@@ -80,7 +80,7 @@ function Vendorfood(){
             <div class="box">
               <div class="right-side">
                 <div class="box-topic">Update Food Items</div>
-                <a class="btn btn-danger" href="Assessment" role="button">Update</a>
+                <a class="btn btn-danger" href="update-food" role="button">Update</a>
                 
               </div>
               <i class="bx bx-cart cart three"></i>

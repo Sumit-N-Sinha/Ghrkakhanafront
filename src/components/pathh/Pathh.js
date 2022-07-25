@@ -35,6 +35,8 @@ import ListDesc from "../CustomerComponents/ListDesc";
 import AdminVendor from "../admin/AdminVendor";
 import DeleteCustomerComponent from "../CustomerComponents/DeleteCustomerComponents";
 import About from "../navbar/About";
+import DeleteOrderById from "../OrderComponents/DeleteOrderByid";
+import ListAllVendorComponents from "../VendorComponents/ListAllVendorComponents";
 
 
 
@@ -74,7 +76,8 @@ function Pathh(){
                 <Route path="/foodasc" element={<ListAsc />} />
                 <Route path="/fooddesc" element={<ListDesc />} />
                 <Route path="/about" element={<About />} />
-
+                <Route path="/cancelorder" element={<DeleteOrderById />} />
+                <Route path="/allvendor" element={<ListAllVendorComponents />} />
             </Routes>
         </Router>
     );

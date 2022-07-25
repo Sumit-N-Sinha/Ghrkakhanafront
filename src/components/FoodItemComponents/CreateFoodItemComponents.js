@@ -118,7 +118,7 @@ const CreateFoodItemComponent = () => {
                                 <div className = "form-group mb-2">
                                     <label className = "form-label">  Image :</label>
                                     <input
-                                        type = "file"
+                                        type = "text"
                                         placeholder = "Enter image"
                                         name = "image"
                                         className = "form-control"

@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import {Link, useNavigate, useParams } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import CustomerService from '../../service/CustomerService'
 import Navbar from '../navbar/Navbar';
 const CreateCustomerComponent = () => {
@@ -20,9 +21,10 @@ const CreateCustomerComponent = () => {
 
         if(id){
             CustomerService.updateCustomer(id, customer).then((response) => {
-                navigate.push('/customer')
+                navigate('/Customer');
             }).catch(error => {
                 console.log(error)
+                toast("error");
             })
 
         }else{
@@ -86,6 +88,7 @@ const CreateCustomerComponent = () => {
                                         className = "form-control"
                                         value = {name}
                                         onChange = {(e) => setName(e.target.value)}
+                                        required
                                     >
                                     </input>
                                 </div>
@@ -99,6 +102,7 @@ const CreateCustomerComponent = () => {
                                         className = "form-control"
                                         value = {email}
                                         onChange = {(e) => setEmail(e.target.value)}
+                                        required
                                     >
                                     </input>
                                 </div>
@@ -112,6 +116,7 @@ const CreateCustomerComponent = () => {
                                         className = "form-control"
                                         value = {address}
                                         onChange = {(e) => setAddress(e.target.value)}
+                                        required
                                     >
                                     </input>
                                 </div>
@@ -124,12 +129,14 @@ const CreateCustomerComponent = () => {
                                         className = "form-control"
                                         value = {phone}
                                         onChange = {(e) => setPhone(e.target.value)}
+                                        required
                                     >
                                     </input>
                                 </div>
 
                                 <button className = "btn btn-success" onClick = {(e) => saveOrUpdateCustomer(e)} >Submit </button>
                                 <Link to="/Cust" className="btn btn-danger"> Cancel </Link>
+                                
                             </form>
 
                         </div>

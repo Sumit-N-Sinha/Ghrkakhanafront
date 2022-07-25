@@ -78,7 +78,7 @@ const AdminControl = () => {
     <div class="box">
       <div class="right-side">
         <div class="box-topic">Get All Vendor</div>
-        <a class="btn btn-danger" href="/listvendor" role="button">Find</a>
+        <a class="btn btn-danger" href="/allvendor" role="button">Find</a>
         
       </div>
       <i class="bx bxs-cart-add cart two"></i>
